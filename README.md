@@ -1,62 +1,50 @@
 # Nubian Luxe Braiding Lounge
 
-A modern web application for Nubian Luxe Braiding Lounge, featuring a beautiful and responsive design with elegant animations and a user-friendly interface.
+A modern, elegant website for Nubian Luxe Braiding Lounge built with Next.js and Tailwind CSS.
 
 ## Features
 
-- Modern, responsive design with dark theme
-- Animated components using Framer Motion
-- Neon sign effects and elegant typography
-- Navigation system with smooth transitions
-- Service booking system
-- Hair color selection interface
-- Policy and information pages
+- Responsive design for all devices
+- Interactive hero section with parallax scrolling
+- Booking integration with Calendly
+- Comprehensive service information
+- Modern UI with animations and transitions
 
-## Tech Stack
+## Technologies
 
-- Next.js 14 (React framework)
-- TypeScript for type safety
-- Tailwind CSS for styling
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
 - Framer Motion for animations
-- Radix UI for accessible components
 
 ## Getting Started
 
 1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/nubianluxe.git
+```
+git clone https://github.com/PaulCertified/nubianluxe.git
+cd nubianluxe
 ```
 
 2. Install dependencies:
-```bash
+```
 npm install
 ```
 
 3. Run the development server:
-```bash
+```
 npm run dev
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Project Structure
+## Image Assets
 
-```
-src/
-├── app/              # Next.js app directory
-├── components/       # React components
-├── lib/             # Utility functions and hooks
-└── styles/          # Global styles and Tailwind config
-```
+Some large image files are not included in this repository. You'll need to add them manually to the following paths:
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+- `/public/hero-background.jpg` - Main hero section background
+- `/public/assets/gold-frame.png` - Frame for portraits
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is proprietary and belongs to Nubian Luxe Braiding Lounge.
