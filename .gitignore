@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Large image files
+public/assets/gold-frame.png
+public/hero-background.jpg
+*.jpg
+*.png
+!public/hero-background.png
+!public/favicon.ico
