@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="transparent"/>
+  
+  <!-- Woman with long hair illustration -->
+  <g transform="translate(50, 30) scale(1.2)">
+    <!-- Hair -->
+    <path d="M200,50 C180,70 160,100 160,150 C160,200 170,250 180,300 C190,350 200,400 190,450 C180,500 170,530 160,550" 
+      fill="#2F4F4F" stroke="#2F4F4F" stroke-width="30" stroke-linecap="round"/>
+    <path d="M190,100 C185,120 180,140 180,160 C180,200 185,250 190,300 C195,350 200,400 195,450" 
+      fill="none" stroke="#696969" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+    <path d="M195,400 C195,420 190,440 185,460 C180,480 175,500 170,520" 
+      fill="none" stroke="#D2B48C" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+    
+    <!-- Face -->
+    <path d="M200,150 C220,150 230,160 230,180 C230,210 220,240 200,240 C180,240 160,210 160,180 C160,160 180,150 200,150" 
+      fill="#CD7F32" stroke="#A0522D" stroke-width="1"/>
+    
+    <!-- Features -->
+    <path d="M190,170 C192,168 194,168 196,170" fill="none" stroke="#000" stroke-width="2"/>
+    <path d="M210,170 C212,168 214,168 216,170" fill="none" stroke="#000" stroke-width="2"/>
+    <ellipse cx="193" cy="172" rx="2" ry="3" fill="#000"/>
+    <ellipse cx="213" cy="172" rx="2" ry="3" fill="#000"/>
+    <path d="M200,185 C205,185 210,190 205,195 C200,200 190,200 185,195 C180,190 195,185 200,185" 
+      fill="#A52A2A" stroke="#8B0000" stroke-width="1"/>
+    
+    <!-- Body -->
+    <path d="M200,240 C220,245 230,250 240,280 C250,310 255,340 250,370 C245,400 240,430 230,460" 
+      fill="#F5F5DC" stroke="#F5F5DC" stroke-width="30" stroke-linecap="round"/>
+    
+    <!-- Waist */-->
+    <path d="M230,330 C220,340 210,345 200,345 C190,345 180,340 170,330" 
+      fill="none" stroke="#CD7F32" stroke-width="3"/>
+  </g>
+  
+  <!-- Length Chart -->
+  <g transform="translate(420, 100)">
+    <!-- Scale Lines -->
+    <line x1="0" y1="0" x2="50" y2="0" stroke="#000" stroke-width="4"/>
+    <line x1="0" y1="0" x2="0" y2="400" stroke="#000" stroke-width="2"/>
+    
+    <!-- Measurements -->
+    <g transform="translate(0, 0)">
+      <line x1="-10" y1="0" x2="20" y2="0" stroke="#000" stroke-width="4"/>
+      <line x1="-20" y1="20" x2="30" y2="20" stroke="#000" stroke-width="2"/>
+      <text x="60" y="5" font-family="Arial" font-weight="bold" font-size="24">SHOULDER LENGTH</text>
+    </g>
+    
+    <g transform="translate(0, 80)">
+      <line x1="-10" y1="0" x2="20" y2="0" stroke="#000" stroke-width="4"/>
+      <line x1="-20" y1="20" x2="30" y2="20" stroke="#000" stroke-width="2"/>
+      <text x="60" y="5" font-family="Arial" font-weight="bold" font-size="24">ARM PIT LENGTH</text>
+    </g>
+    
+    <g transform="translate(0, 160)">
+      <line x1="-10" y1="0" x2="20" y2="0" stroke="#000" stroke-width="4"/>
+      <line x1="-20" y1="20" x2="30" y2="20" stroke="#000" stroke-width="2"/>
+      <text x="60" y="5" font-family="Arial" font-weight="bold" font-size="24">MID BACK LENGTH</text>
+    </g>
+    
+    <g transform="translate(0, 240)">
+      <line x1="-10" y1="0" x2="20" y2="0" stroke="#000" stroke-width="4"/>
+      <line x1="-20" y1="20" x2="30" y2="20" stroke="#000" stroke-width="2"/>
+      <text x="60" y="5" font-family="Arial" font-weight="bold" font-size="24">WAIST LENGTH</text>
+    </g>
+    
+    <g transform="translate(0, 320)">
+      <line x1="-10" y1="0" x2="20" y2="0" stroke="#000" stroke-width="4"/>
+      <line x1="-20" y1="20" x2="30" y2="20" stroke="#000" stroke-width="2"/>
+      <text x="60" y="5" font-family="Arial" font-weight="bold" font-size="24">HIP LENGTH</text>
+    </g>
+  </g>
+</svg> 
