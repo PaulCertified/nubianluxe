@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Nubian Luxe Braiding Lounge",
-  description: "The flexibility you need & the accommodations you love - Professional braiding services available 24/7",
+  title: "Nubian Luxe Brand",
+  description: "WELCOME TO NUBIAN LUXE BRAIDING LOUNGE -  LET'S HONOR OUR ROOTS AND REDEFINE THE BRAIDING EXPERIENCE TOGETHER.",
 };
 
 export default function RootLayout({
