@@ -28,29 +28,29 @@ const colorCategories: ColorCategory[] = [
     name: 'EX BRAID PROFESSIONAL | BOX PROFESSIONAL',
     description: 'Our standard professional-grade braiding hair colors',
     images: [
-      '/assets/85dece8223b8bb41d92969aeaa841d49.png',
-      '/assets/c74ebbec83e03811a80302a54aee02ad.png',
-      '/assets/f951e0689500577bec8f8a27a85f7cea.png',
-      '/assets/d4dcbf837ad6a044268884dd1c248177.png'
+      '/assets/1.png',
+      '/assets/2.png',
+      '/assets/3.png',
+      '/assets/4.png'
     ]
   },
   {
     id: 'platinum',
     name: 'EX BRAID PLATINUM 2 TONE COLLECTION',
     description: 'Premium two-tone ombré effect braiding hair',
-    image: '/assets/2015123e5c74ca2772db3553ed303e12.png'
+    image: '/assets/exbraids2platinum.png'
   },
   {
     id: 'rainbow',
     name: 'EX BRAID RAINBOW 3 TONE COLLECTION',
     description: 'Vibrant three-tone gradient braiding hair options',
-    image: '/assets/f4c4290c6b6bd1a27b5790f00ee8e722.png'
+    image: '/assets/exbraidrainbow.png'
   },
   {
     id: 'kinky',
     name: 'EX BRAID KINKY AFRO & BOUNCY TWIST',
     description: 'Textured styles for natural-looking braids and twists',
-    image: '/assets/d996fbb8c202ae43a1387baf88a30636.png'
+    image: '/assets/kinky.png'
   }
 ]
 
@@ -131,13 +131,16 @@ export default function BraidingHairColorChart() {
               {selectedCategoryData?.id === 'standard' && 'images' in selectedCategoryData ? (
                 <div className="flex flex-col space-y-8">
                   {selectedCategoryData.images.map((image, index) => (
-                    <div key={index} className="relative h-[400px] w-full">
+                    <div key={index} className="relative w-full flex justify-center items-center" style={{ minHeight: '1px' }}>
                       <Image
                         src={image}
                         alt={`${selectedCategoryData.name} Color Chart ${index + 1}`}
-                        fill
-                        className="object-contain rounded-lg"
+                        width={1200}
+                        height={900}
+                        style={{ width: '100%', height: 'auto', maxHeight: '700px', objectFit: 'contain', display: 'block', margin: '0 auto' }}
+                        className="rounded-lg max-w-full"
                         priority
+                        sizes="100vw"
                       />
                     </div>
                   ))}
