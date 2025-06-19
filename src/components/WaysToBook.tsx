@@ -12,7 +12,7 @@ const bookingTiers = [
     fee: 'NO BOOKING FEE',
     color: 'bg-[#D4AF37]',
     hoverColor: 'hover:bg-[#B8960C]',
-    calendlyUrl: 'https://calendly.com/ipaulgipson/regular-booking'
+    bookingUrl: 'https://nubianluxebraidinglounge.as.me/schedule/38affb10/?calendarIds=8381368'
   },
   {
     name: 'PREMIUM BOOKING',
@@ -21,7 +21,7 @@ const bookingTiers = [
     fee: '$25 BOOKING FEE',
     color: 'bg-[#B87C6C]',
     hoverColor: 'hover:bg-[#A66B5B]',
-    calendlyUrl: 'https://calendly.com/ipaulgipson/regular-booking?utm_source=website&utm_medium=booking_tier&utm_campaign=premium'
+    bookingUrl: 'https://nubianluxebraidinglounge.as.me/schedule/38affb10/?calendarIds=11415033'
   },
   {
     name: 'VIP BOOKING',
@@ -30,7 +30,7 @@ const bookingTiers = [
     fee: '$50 BOOKING FEE',
     color: 'bg-[#4A4A4A]',
     hoverColor: 'hover:bg-[#333333]',
-    calendlyUrl: 'https://calendly.com/ipaulgipson/regular-booking?utm_source=website&utm_medium=booking_tier&utm_campaign=vip'
+    bookingUrl: 'https://nubianluxebraidinglounge.as.me/schedule/38affb10/?calendarIds=11415140'
   }
 ]
 
@@ -42,22 +42,29 @@ const bookingSteps = [
 ]
 
 const BookingTierCard = ({ tier }: { tier: typeof bookingTiers[0] }) => (
-  <MotionDiv
-    className={`relative group`}
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.5 }}
+  <a 
+    href={tier.bookingUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block"
   >
-    <div className={`rounded-2xl p-6 ${tier.color} ${tier.hoverColor} transition-colors duration-300`}>
-      <h3 className="text-xl font-bold text-white mb-2">{tier.name}</h3>
-      <div className="space-y-1 text-white/90">
-        <p>{tier.schedule}</p>
-        <p>{tier.notice}</p>
-        <p className="font-semibold">{tier.fee}</p>
+    <MotionDiv
+      className={`relative cursor-pointer group`}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className={`rounded-2xl p-6 ${tier.color} ${tier.hoverColor} transition-colors duration-300`}>
+        <h3 className="text-xl font-bold text-white mb-2">{tier.name}</h3>
+        <div className="space-y-1 text-white/90">
+          <p>{tier.schedule}</p>
+          <p>{tier.notice}</p>
+          <p className="font-semibold">{tier.fee}</p>
+        </div>
       </div>
-    </div>
-  </MotionDiv>
+    </MotionDiv>
+  </a>
 )
 
 export default function WaysToBook() {
