@@ -41,19 +41,13 @@ const bookingSteps = [
   'SCHEDULE YOUR SERVICE'
 ]
 
-interface BookingTierCardProps {
-  tier: typeof bookingTiers[0]
-  onClick: () => void
-}
-
-const BookingTierCard = ({ tier, onClick }: BookingTierCardProps) => (
+const BookingTierCard = ({ tier }: { tier: typeof bookingTiers[0] }) => (
   <MotionDiv
-    className={`relative cursor-pointer group`}
+    className={`relative group`}
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5 }}
-    onClick={onClick}
   >
     <div className={`rounded-2xl p-6 ${tier.color} ${tier.hoverColor} transition-colors duration-300`}>
       <h3 className="text-xl font-bold text-white mb-2">{tier.name}</h3>
@@ -121,7 +115,6 @@ export default function WaysToBook() {
             <BookingTierCard
               key={tier.name}
               tier={tier}
-              onClick={() => handleBookingTierClick(tier)}
             />
           ))}
         </div>
@@ -156,26 +149,6 @@ export default function WaysToBook() {
           </div>
         </MotionDiv>
       </div>
-
-      {/* Calendly Modal */}
-      {showCalendly && selectedTier && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80">
-          <div className="relative bg-white w-full max-w-4xl h-[80vh] rounded-lg overflow-hidden">
-            <button 
-              onClick={() => setShowCalendly(false)}
-              className="absolute right-4 top-4 z-10 p-2 bg-black/10 hover:bg-black/20 transition-colors rounded-full"
-            >
-              <X className="w-6 h-6" />
-            </button>
-            
-            <div 
-              className="calendly-inline-widget w-full h-full" 
-              data-url={selectedTier.calendlyUrl}
-              style={{ minWidth: '320px' }}
-            ></div>
-          </div>
-        </div>
-      )}
     </section>
   )
 } 
