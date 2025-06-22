@@ -5,6 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://nubianluxebrand.com'),
   title: "Nubian Luxe Brand",
   description: "WELCOME TO NUBIAN LUXE BRAIDING LOUNGE -  LET'S HONOR OUR ROOTS AND REDEFINE THE BRAIDING EXPERIENCE TOGETHER.",
   openGraph: {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     description: "WELCOME TO NUBIAN LUXE BRAIDING LOUNGE -  LET'S HONOR OUR ROOTS AND REDEFINE THE BRAIDING EXPERIENCE TOGETHER.",
     images: [
       {
-        url: "/assets/preview-image1.png?v=2",
+        url: "/assets/preview-image1.png?v=3",
         width: 1200,
         height: 630,
         alt: "Nubian Luxe Brand Preview"
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     description: "WELCOME TO NUBIAN LUXE BRAIDING LOUNGE -  LET'S HONOR OUR ROOTS AND REDEFINE THE BRAIDING EXPERIENCE TOGETHER.",
     images: [
       {
-        url: "/assets/preview-image1.png?v=2",
+        url: "/assets/preview-image1.png?v=3",
         alt: "Nubian Luxe Brand Preview"
       }
     ]
