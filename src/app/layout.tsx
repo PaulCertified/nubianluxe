@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "WELCOME TO NUBIAN LUXE BRAIDING LOUNGE -  LET'S HONOR OUR ROOTS AND REDEFINE THE BRAIDING EXPERIENCE TOGETHER.",
     images: [
       {
-        url: "/assets/preview-image1.png",
+        url: "/assets/preview-image1.png?v=2",
         width: 1200,
         height: 630,
         alt: "Nubian Luxe Brand Preview"
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: "WELCOME TO NUBIAN LUXE BRAIDING LOUNGE -  LET'S HONOR OUR ROOTS AND REDEFINE THE BRAIDING EXPERIENCE TOGETHER.",
     images: [
       {
-        url: "/assets/preview-image1.png",
+        url: "/assets/preview-image1.png?v=2",
         alt: "Nubian Luxe Brand Preview"
       }
     ]
