@@ -29,10 +29,9 @@ export default function HeroSection() {
       {/* Background Image with CSS-based fade in */}
       <div className="absolute inset-0 overflow-hidden">
         <div 
-          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1500 ease-in-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1500 ease-in-out md:bg-fixed`}
           style={{
             backgroundImage: "url('/hero-background.png')",
-            backgroundAttachment: "fixed",
             backgroundSize: "cover"
           }}
         />
